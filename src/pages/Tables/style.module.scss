@@ -3,12 +3,68 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 30px;
 }
 
 .menu {
   width: 100%;
-  height: 100px;
+  height: 50px;
   padding-top: 30px;
   padding-right: 10px;
   padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  &__item {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__label {
+    width: fit-content;
+  }
+  &__input {
+    width: fit-content;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+
+  &_row {
+    width: fit-content;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  &_cell {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(226, 226, 226);
+  }
+}
+.start {
+  height: 50px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
