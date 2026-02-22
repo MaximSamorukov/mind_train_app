@@ -1,14 +1,14 @@
 export const menu = [
   {
-    title: 'Таблицы',
-    path: 'tables'
+    title: "Tables",
+    path: "tables",
   },
   {
-    title: 'Painted Words',
-    path: 'painted_words'
+    title: "Painted Words",
+    path: "painted_words",
   },
   {
-    title: 'Gestures',
-    path: 'gestures'
+    title: "Gestures",
+    path: "gestures",
   },
-]
+];
