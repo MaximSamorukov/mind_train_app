@@ -31,7 +31,7 @@
     width: fit-content;
   }
 }
-
+$SIZE: 40px;
 .field {
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@
 
   &_row {
     width: fit-content;
-    height: 30px;
+    height: $SIZE;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -52,12 +52,17 @@
     gap: 5px;
   }
   &_cell {
-    height: 30px;
-    width: 30px;
+    height: $SIZE;
+    width: $SIZE;
+    font-size: 23px;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(226, 226, 226);
+    &__disabled {
+      color: rgb(226, 226, 226);
+    }
   }
 }
 .start {

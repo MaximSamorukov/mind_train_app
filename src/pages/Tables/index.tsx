@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import cn from "classnames";
 import type { InputNumberProps } from "antd";
 import { InputNumber, Button } from "antd";
 import s from "./style.module.scss";
 import type { valueType } from "antd/es/statistic/utils";
 import { useNumbers } from "../../utils/useNumbers";
+import { Timer } from "./components/Timer";
 
 const DEFAULT_VALUE = 6;
 const DEFAULT_INTERVAL = 60;
@@ -14,6 +16,7 @@ export const Tables: React.FC = () => {
   const [intervalCount, setIntervalCount] = useState<valueType | null>(
     DEFAULT_INTERVAL,
   );
+  const [inProcess, setInProcess] = useState<boolean>(false);
   const { numbers, setNumberCount } = useNumbers(
     Number(vertCount || 0) * Number(horCount || 0),
   );
@@ -29,6 +32,10 @@ export const Tables: React.FC = () => {
   const intervalValueChange: InputNumberProps["onChange"] = (v) => {
     setIntervalCount(v);
   };
+  const handleProcess = useCallback(() => {
+    console.log("handleProcess");
+    setInProcess((v) => !v);
+  }, []);
   return (
     <div className={s.container}>
       <div className={s.menu}>
@@ -36,6 +43,7 @@ export const Tables: React.FC = () => {
           <div className={s.menu__label}>По горизонтали</div>
           <div className={s.menu__input}>
             <InputNumber
+              disabled={inProcess}
               value={horCount}
               size="large"
               min={5}
@@ -51,6 +59,7 @@ export const Tables: React.FC = () => {
           <div className={s.menu__label}>По вертикали</div>
           <div className={s.menu__input}>
             <InputNumber
+              disabled={inProcess}
               value={vertCount}
               size="large"
               min={5}
@@ -66,6 +75,7 @@ export const Tables: React.FC = () => {
           <div className={s.menu__label}>Время, сек</div>
           <div className={s.menu__input}>
             <InputNumber
+              disabled={inProcess}
               value={intervalCount}
               size="large"
               min={5}
@@ -74,6 +84,16 @@ export const Tables: React.FC = () => {
               changeOnWheel
               controls={false}
               onChange={intervalValueChange}
+            />
+          </div>
+        </div>
+        <div className={s.menu__item}>
+          <div className={s.menu__label}>Таймер, сек</div>
+          <div className={s.menu__input}>
+            <Timer
+              value={intervalCount}
+              inProcess={inProcess}
+              handleProcess={handleProcess}
             />
           </div>
         </div>
@@ -86,7 +106,11 @@ export const Tables: React.FC = () => {
               {Array(vertCount)
                 .fill(null)
                 .map((__, column) => (
-                  <div className={s.field_cell}>
+                  <div
+                    className={cn(s.field_cell, {
+                      [s.field_cell__disabled]: !inProcess,
+                    })}
+                  >
                     {numbers[row * Number(vertCount) + column]}
                   </div>
                 ))}
@@ -94,8 +118,13 @@ export const Tables: React.FC = () => {
           ))}
       </div>
       <div className={s.start}>
-        <Button variant="solid" color="danger" size="large">
-          START
+        <Button
+          variant="solid"
+          color="danger"
+          size="large"
+          onClick={handleProcess}
+        >
+          {inProcess ? "STOP" : "START"}
         </Button>
       </div>
     </div>
