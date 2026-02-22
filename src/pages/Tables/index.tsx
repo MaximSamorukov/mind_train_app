@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { InputNumberProps } from "antd";
 import { InputNumber, Button } from "antd";
 import s from "./style.module.scss";
 import type { valueType } from "antd/es/statistic/utils";
+import { useNumbers } from "../../utils/useNumbers";
 
 const DEFAULT_VALUE = 6;
 const DEFAULT_INTERVAL = 60;
@@ -13,7 +14,12 @@ export const Tables: React.FC = () => {
   const [intervalCount, setIntervalCount] = useState<valueType | null>(
     DEFAULT_INTERVAL,
   );
-
+  const { numbers, setNumberCount } = useNumbers(
+    Number(vertCount || 0) * Number(horCount || 0),
+  );
+  useEffect(() => {
+    setNumberCount(Number(vertCount || 0) * Number(horCount || 0));
+  }, [horCount, vertCount]);
   const horValueChange: InputNumberProps["onChange"] = (v) => {
     setHorCount(v || DEFAULT_VALUE);
   };
@@ -75,12 +81,14 @@ export const Tables: React.FC = () => {
       <div className={s.field}>
         {Array(horCount)
           .fill(null)
-          .map((_, i) => (
+          .map((_, row) => (
             <div className={s.field_row}>
               {Array(vertCount)
                 .fill(null)
-                .map((__, ii) => (
-                  <div className={s.field_cell}>{ii}</div>
+                .map((__, column) => (
+                  <div className={s.field_cell}>
+                    {numbers[row * Number(vertCount) + column]}
+                  </div>
                 ))}
             </div>
           ))}
