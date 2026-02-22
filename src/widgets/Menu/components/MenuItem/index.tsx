@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router";
 import s from "./style.module.scss";
 
