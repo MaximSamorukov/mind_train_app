@@ -107,6 +107,7 @@ export const Tables: React.FC = () => {
                 .fill(null)
                 .map((__, column) => (
                   <div
+                    key={row + column}
                     className={cn(s.field_cell, {
                       [s.field_cell__disabled]: !inProcess,
                     })}
