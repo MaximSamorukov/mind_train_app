@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cn from "classnames";
 import s from "./style.module.scss";
 const imagesNumbers = Array.from({ length: 10 }, (_, i) => i + 1);
 export const Gestures: React.FC = () => {
@@ -9,10 +10,15 @@ export const Gestures: React.FC = () => {
   return (
     <div className={s.container}>
       <div className={s.menu}>
-        {imagesNumbers.map((i) => (
+        {imagesNumbers.map((i, ind) => (
           <div className={s.menu__item}>
             <div className={s.menu__label}>
-              <button onClick={setSelectedImageNumber} className={s.btn}>
+              <button
+                onClick={setSelectedImageNumber}
+                className={cn(s.btn, {
+                  [s.btn_active]: ind + 1 === selectedImg,
+                })}
+              >
                 {i}
               </button>
             </div>
