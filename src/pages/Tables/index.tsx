@@ -17,7 +17,7 @@ export const Tables: React.FC = () => {
     DEFAULT_INTERVAL,
   );
   const [inProcess, setInProcess] = useState<boolean>(false);
-  const { numbers, setNumberCount } = useNumbers(
+  const { numbers, setNumberCount, refreshField } = useNumbers(
     Number(vertCount || 0) * Number(horCount || 0),
   );
   useEffect(() => {
@@ -33,8 +33,10 @@ export const Tables: React.FC = () => {
     setIntervalCount(v);
   };
   const handleProcess = useCallback(() => {
-    console.log("handleProcess");
     setInProcess((v) => !v);
+  }, []);
+  const refresh = useCallback(() => {
+    refreshField();
   }, []);
   return (
     <div className={s.container}>
@@ -126,6 +128,15 @@ export const Tables: React.FC = () => {
           onClick={handleProcess}
         >
           {inProcess ? "STOP" : "START"}
+        </Button>
+        <Button
+          disabled={inProcess}
+          variant="solid"
+          color="geekblue"
+          size="large"
+          onClick={refresh}
+        >
+          NEW
         </Button>
       </div>
     </div>

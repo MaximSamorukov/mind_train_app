@@ -14,7 +14,16 @@ export const useNumbers = (n: number) => {
       setCount(Math.floor(Math.abs(newN)));
     }
   }, []);
-
+  const refreshField = useCallback(() => {
+    const numberArray = Array(count)
+      .fill(null)
+      .map((_, i) => i);
+    for (let i = count - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [numberArray[i], numberArray[j]] = [numberArray[j], numberArray[i]];
+    }
+    setNumbers(numberArray);
+  }, [count]);
   useEffect(() => {
     if (ref.current) {
       clearTimeout(ref.current);
@@ -38,5 +47,6 @@ export const useNumbers = (n: number) => {
   return {
     numbers,
     setNumberCount,
+    refreshField,
   };
 };
