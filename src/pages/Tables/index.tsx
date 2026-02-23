@@ -36,8 +36,9 @@ export const Tables: React.FC = () => {
     setInProcess((v) => !v);
   }, []);
   const refresh = useCallback(() => {
+    setNumberCount(Number(vertCount || 0) * Number(horCount || 0));
     refreshField();
-  }, []);
+  }, [vertCount, horCount]);
   return (
     <div className={s.container}>
       <div className={s.menu}>
