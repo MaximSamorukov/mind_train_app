@@ -23,7 +23,7 @@ export const useNumbers = (n: number) => {
       [numberArray[i], numberArray[j]] = [numberArray[j], numberArray[i]];
     }
     setNumbers(numberArray);
-  }, [count]);
+  }, [count, setNumbers]);
   useEffect(() => {
     if (ref.current) {
       clearTimeout(ref.current);
