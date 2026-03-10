@@ -48,7 +48,7 @@ export const Tables: React.FC = () => {
               disabled={inProcess}
               value={horCount}
               size="large"
-              min={5}
+              min={1}
               max={25}
               defaultValue={DEFAULT_VALUE}
               changeOnWheel
@@ -64,7 +64,7 @@ export const Tables: React.FC = () => {
               disabled={inProcess}
               value={vertCount}
               size="large"
-              min={5}
+              min={1}
               max={25}
               defaultValue={DEFAULT_VALUE}
               changeOnWheel
