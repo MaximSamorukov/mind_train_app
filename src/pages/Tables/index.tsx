@@ -42,7 +42,7 @@ export const Tables: React.FC = () => {
     <div className={s.container}>
       <div className={s.menu}>
         <div className={s.menu__item}>
-          <div className={s.menu__label}>По горизонтали</div>
+          <div className={s.menu__label}>Строк:</div>
           <div className={s.menu__input}>
             <InputNumber
               disabled={inProcess}
@@ -58,7 +58,7 @@ export const Tables: React.FC = () => {
           </div>
         </div>
         <div className={s.menu__item}>
-          <div className={s.menu__label}>По вертикали</div>
+          <div className={s.menu__label}>Столбцов:</div>
           <div className={s.menu__input}>
             <InputNumber
               disabled={inProcess}
