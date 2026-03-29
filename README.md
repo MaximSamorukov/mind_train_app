@@ -1,73 +1,83 @@
-# React + TypeScript + Vite
+# Mind Train App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for cognitive and brain training exercises built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app includes three cognitive training exercises:
 
-## React Compiler
+### 1. Tables (Schulte Tables)
+A grid-based attention training exercise where numbers are randomly distributed. Configure the grid size (rows/columns) and timer duration to challenge your visual search speed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Painted Words (Stroop Test)
+Words representing colors are displayed in mismatched font colors. Train your cognitive flexibility by identifying the font color rather than reading the word meaning.
 
-## Expanding the ESLint configuration
+### 3. Gestures
+Visual memory exercise with 10 hand gesture diagrams. Select and study different gesture patterns to improve spatial memory.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19.2** - UI framework
+- **TypeScript 5.9** - Type safety
+- **Vite 7.3** - Build tool and dev server
+- **React Router 7.13** - Client-side routing
+- **Ant Design 6.3** - UI component library
+- **SCSS Modules** - Component-scoped styling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or later recommended)
+- npm
+
+## Installation
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server with hot module replacement:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (or the next available port).
+
+## Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Preview Production Build
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Linting
+
+Run ESLint to check code quality:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── app/          # App-wide configuration (router, constants)
+├── pages/        # Page components (Tables, PaintedWords, Gestures)
+├── widgets/      # Composite widgets (Menu)
+├── providers/    # Context providers
+├── types/        # TypeScript type definitions
+├── utils/        # Custom hooks and utilities
+└── assets/       # Static assets
 ```
