@@ -11,4 +11,8 @@ export const menu = [
     title: "Gestures",
     path: "gestures",
   },
+  {
+    title: "Diction",
+    path: "diction",
+  },
 ];

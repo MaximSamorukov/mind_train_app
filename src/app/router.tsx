@@ -4,11 +4,13 @@ import { App } from "../App";
 import { Tables } from "../pages/Tables";
 import { PaintedWords } from "../pages/PaintedWords";
 import { Gestures } from "../pages/Gestures";
+import { Diction } from "../pages/Diction";
 
 const componentMap: { [key: string]: React.ComponentType<any> } = {
   tables: Tables,
   painted_words: PaintedWords,
   gestures: Gestures,
+  diction: Diction,
 };
 
 const redirectToFirstItem = async () => {

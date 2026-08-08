@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.menu {
+  width: 100%;
+  height: fit-content;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  &__item {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__label {
+    width: fit-content;
+  }
+  &__input {
+    width: fit-content;
+  }
+}
+.btn {
+  min-width: 40px;
+  width: fit-content;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  &_active {
+    font-weight: 700;
+  }
+}
+
+.field {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  gap: 6px;
+}
