@@ -58,7 +58,7 @@ export const Diction: React.FC = () => {
       </div>
       <div className={s.field}>
         <Suspense fallback={<div>loading</div>}>
-          <LazyWrapper path={`./exercises/${currentExrcise}`} />
+          <LazyWrapper path={`../exercises/${currentExrcise.name}/index.tsx`} />
         </Suspense>
       </div>
     </div>

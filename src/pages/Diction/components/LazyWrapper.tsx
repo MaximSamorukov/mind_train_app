@@ -4,7 +4,7 @@ type LazyWrapperProps = {
   path: string;
 };
 export const LazyWrapper: React.FC<LazyWrapperProps> = ({ path }) => {
-  const [Component, setComponent] = useState<React.ReactNode>(<></>);
+  const [Component, setComponent] = useState<React.ComponentType | null>(null);
 
   React.useEffect(() => {
     import(path).then((mod) => {
