@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import cn from "classnames";
 import s from "./style.module.scss";
 import { STAGES, type ItemType } from "./constants";
+import { LazyWrapper } from "./components/LazyWrapper";
 
 export const Diction: React.FC = () => {
   const [currentStage, setCurrentState] = useState(STAGES[0]);
@@ -55,7 +56,11 @@ export const Diction: React.FC = () => {
           );
         })}
       </div>
-      <div className={s.field}>--</div>
+      <div className={s.field}>
+        <Suspense fallback={<div>loading</div>}>
+          <LazyWrapper path={`./exercises/${currentExrcise}`} />
+        </Suspense>
+      </div>
     </div>
   );
 };

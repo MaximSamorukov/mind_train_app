@@ -4,7 +4,7 @@ export const STAGES = [
     label: "Подготовка",
     exercises: [
       {
-        name: "prepare_kamary",
+        name: "Prepare_kamary",
         label: "Камары",
       },
     ],
@@ -14,19 +14,19 @@ export const STAGES = [
     label: "Упражнения для губ",
     exercises: [
       {
-        name: "exercisesForLips_pencilInTheMouth",
+        name: "ExercisesForLips_pencilInTheMouth",
         label: "Чтение с карандашом во рту",
       },
       {
-        name: "exercisesForLips_trubochka",
+        name: "ExercisesForLips_trubochka",
         label: "Губы трубочкой",
       },
       {
-        name: "exercisesForLips_trubochkaWithSmile",
+        name: "ExercisesForLips_trubochkaWithSmile",
         label: "Губы трубочкой и улыбка",
       },
       {
-        name: "exercisesForLips_trubochkaCircle",
+        name: "ExercisesForLips_trubochkaCircle",
         label: "Круговые движения губ",
       },
     ],
@@ -36,19 +36,19 @@ export const STAGES = [
     label: "Упражнения для языка",
     exercises: [
       {
-        name: "exercisesForLaunge_ex_1",
+        name: "ExercisesForLaunge_ex_1",
         label: "Кончик языка к уголкам губ",
       },
       {
-        name: "exercisesForLaunge_ex_2",
+        name: "ExercisesForLaunge_ex_2",
         label: "Кончик языка к верхней и нижней губе",
       },
       {
-        name: "exercisesForLaunge_ex_3",
+        name: "ExercisesForLaunge_ex_3",
         label: "Уколы языка в щеку",
       },
       {
-        name: "exercisesForLaunge_ex_4",
+        name: "ExercisesForLaunge_ex_4",
         label: "Круговые движения по зубам",
       },
     ],
@@ -58,19 +58,19 @@ export const STAGES = [
     label: "Речевые упражнения",
     exercises: [
       {
-        name: "exercisesSpeech_ex_1",
+        name: "ExercisesSpeech_ex_1",
         label: "Упражнение 1 с карандашом",
       },
       {
-        name: "exercisesSpeech_ex_2",
+        name: "ExercisesSpeech_ex_2",
         label: "Упражнение 1 без карандаша",
       },
       {
-        name: "exercisesSpeech_ex_3",
+        name: "ExercisesSpeech_ex_3",
         label: "Упражнение 2 с карандашом",
       },
       {
-        name: "exercisesSpeech_ex_4",
+        name: "ExercisesSpeech_ex_4",
         label: "Упражнение 3 без карандаша",
       },
     ],

@@ -1,0 +1,3 @@
+export const ExercisesForLips_pencilInTheMouth = () => {
+  return <div>ExercisesForLips_pencilInTheMouth</div>;
+}
