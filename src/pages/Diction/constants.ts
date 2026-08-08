@@ -71,7 +71,7 @@ export const STAGES = [
       },
       {
         name: "ExercisesSpeech_ex_4",
-        label: "Упражнение 3 без карандаша",
+        label: "Упражнение 2 без карандаша",
       },
     ],
   },
