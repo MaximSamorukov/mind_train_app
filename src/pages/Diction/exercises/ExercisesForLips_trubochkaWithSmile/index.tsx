@@ -1,5 +1,7 @@
+import { StandardPage } from "../../components/StandardPage";
+
 export const ExercisesForLips_trubochkaWithSmile = () => {
-  return <div>ExercisesForLips_trubochkaWithSmile</div>;
-}
+  return <StandardPage description="ExercisesForLips_trubochkaWithSmile" imgPath="ExercisesForLips_trubochkaWithSmile" />;
+};
 
 export default ExercisesForLips_trubochkaWithSmile;

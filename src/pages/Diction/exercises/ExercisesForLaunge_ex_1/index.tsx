@@ -1,5 +1,7 @@
+import { StandardPage } from "../../components/StandardPage";
+
 const ExercisesForLaunge_ex_1 = () => {
-  return <div>ExercisesForLaunge_ex_1</div>;
+  return <StandardPage description="ExercisesForLaunge_ex_1" imgPath="ExercisesForLaunge_ex_1" />;
 };
 
 export default ExercisesForLaunge_ex_1;

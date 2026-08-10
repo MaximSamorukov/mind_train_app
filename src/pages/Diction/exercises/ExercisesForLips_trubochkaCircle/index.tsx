@@ -1,5 +1,7 @@
+import { StandardPage } from "../../components/StandardPage";
+
 export const ExercisesForLips_trubochkaCircle = () => {
-  return <div>ExercisesForLips_trubochkaCircle</div>;
-}
+  return <StandardPage description="ExercisesForLips_trubochkaCircle" imgPath="ExercisesForLips_trubochkaCircle" />;
+};
 
 export default ExercisesForLips_trubochkaCircle;
