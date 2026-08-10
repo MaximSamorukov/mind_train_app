@@ -5,7 +5,7 @@ export const ExercisesForLips_pencilInTheMouth = () => {
   return (
     <StandardPage
       description={L.ExercisesForLips_pencilInTheMouth.description}
-      imgPath={L.ExercisesForLips_pencilInTheMouth.imgPath}
+      imgPath={[L.ExercisesForLips_pencilInTheMouth.imgPath]}
     />
   );
 };

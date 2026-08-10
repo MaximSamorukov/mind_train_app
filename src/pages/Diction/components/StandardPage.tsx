@@ -3,7 +3,7 @@ import s from "./style.module.scss";
 
 type StandardPageProps = {
   description: string;
-  imgPath: string;
+  imgPath: string[];
 };
 export const StandardPage: React.FC<StandardPageProps> = ({
   description,
@@ -11,10 +11,21 @@ export const StandardPage: React.FC<StandardPageProps> = ({
 }) => {
   return (
     <div className={s.standardPageContainer}>
-      <div className={s.standardPageDescription}>{description}</div>
-      <div className={s.standardPageImage}>
-        <img src={imgPath} alt={imgPath} />
-      </div>
+      <div
+        className={s.standardPageDescription}
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></div>
+      {imgPath.length ? (
+        <>
+          {imgPath.map((i) => (
+            <div className={s.standardPageImage}>
+              <img src={i} alt={i} />
+            </div>
+          ))}
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const ExercisesForLaunge_ex_1 = () => {
   return (
     <StandardPage
       description={L.ExercisesForLaunge_ex_1.description}
-      imgPath={L.ExercisesForLaunge_ex_1.imgPath}
+      imgPath={[L.ExercisesForLaunge_ex_1.imgPath]}
     />
   );
 };

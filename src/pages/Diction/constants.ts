@@ -5,7 +5,7 @@ export const STAGES = [
     exercises: [
       {
         name: "Prepare_kamary",
-        label: "Камары",
+        label: "Комары",
       },
     ],
   },

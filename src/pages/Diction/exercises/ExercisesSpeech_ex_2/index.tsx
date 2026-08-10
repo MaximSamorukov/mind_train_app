@@ -5,7 +5,7 @@ export const ExercisesSpeech_ex_2 = () => {
   return (
     <StandardPage
       description={L.ExercisesSpeech_ex_2.description}
-      imgPath={L.ExercisesSpeech_ex_2.imgPath}
+      imgPath={[L.ExercisesSpeech_ex_2.imgPath]}
     />
   );
 };
