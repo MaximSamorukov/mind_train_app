@@ -1,7 +1,13 @@
 import { StandardPage } from "../../components/StandardPage";
+import { L } from "../constants";
 
 export const ExercisesForLaunge_ex_2 = () => {
-  return <StandardPage description="ExercisesForLaunge_ex_2" imgPath="ExercisesForLaunge_ex_2" />;
+  return (
+    <StandardPage
+      description={L.ExercisesForLaunge_ex_2.description}
+      imgPath={L.ExercisesForLaunge_ex_2.imgPath}
+    />
+  );
 };
 
 export default ExercisesForLaunge_ex_2;
