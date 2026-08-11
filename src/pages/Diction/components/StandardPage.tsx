@@ -18,8 +18,16 @@ export const StandardPage: React.FC<StandardPageProps> = ({
       {imgPath.length ? (
         <>
           {imgPath.map((i) => (
-            <div className={s.standardPageImage}>
-              <img src={i} alt={i} />
+            <div key={i} className={s.standardPageImage}>
+              <img
+                src={
+                  new URL(
+                    `../exercises/ExercisesForLips_pencilInTheMouth/assets/${i}`,
+                    import.meta.url,
+                  ).href
+                }
+                alt={i}
+              />
             </div>
           ))}
         </>
