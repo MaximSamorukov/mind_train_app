@@ -17,7 +17,62 @@ export const L = {
 </div>`,
     imgPath: "Prepare_kamary",
   },
-  ExercisesForLips_pencilInTheMouth: {
+  ExercisesForLips_trubochka: {
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <h2 style="margin: 0 0 4px 0; font-size: 1.5rem;">Упражнение "Трубочка"</h2>
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>1. Вытяните губы вперед</b></div>
+    <div><b>2. Задержите на секунду</b></div>
+    <div><b>3. Расслабьте</b></div>
+    <div><b>Повторите 15 раз</b></div>
+  </div>
+</div>`,
+    imgPath: "ExercisesForLips_trubochka",
+    extension: "jpg",
+  },
+  ExercisesForLips_trubochkaWithSmile: {
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <h2 style="margin: 0 0 4px 0; font-size: 1.5rem;">Упражнение "Трубочка" и улыбка</h2>
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>1. Сложите губы в трубочку</b></div>
+    <div><b>2. Растяните в улыбке</b></div>
+    <div><b>Повторите 15 раз</b></div>
+  </div>
+</div>`,
+    imgPath: "ExercisesForLips_trubochkaWithSmile",
+    extension: "jpg",
+  },
+  ExercisesForLips_trubochkaCircle: {
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <h2 style="margin: 0 0 4px 0; font-size: 1.5rem;">Упражнение "Трубочка" и улыбка</h2>
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>Сделайте "Трубочку" и проведите губами по кругу: вверх - в сторону - вниз - в сторону. Повторите 15 раз по часовой и против часовой стрелки</b></div>
+  </div>
+</div>`,
+    imgPath: "ExercisesForLips_trubochkaCircle",
+    extension: "jpg",
+  },
+  ExercisesForLaunge_ex_1: {
+    description: "ExercisesForLaunge_ex_1",
+    imgPath: "ExercisesForLaunge_ex_1",
+    extension: "jpg",
+  },
+  ExercisesForLaunge_ex_2: {
+    description: "ExercisesForLaunge_ex_2",
+    imgPath: "ExercisesForLaunge_ex_2",
+    extension: "jpg",
+  },
+  ExercisesForLaunge_ex_3: {
+    description: "ExercisesForLaunge_ex_3",
+    imgPath: "ExercisesForLaunge_ex_3",
+    extension: "jpg",
+  },
+  ExercisesForLaunge_ex_4: {
+    description: "ExercisesForLaunge_ex_4",
+    imgPath: "ExercisesForLaunge_ex_4",
+    extension: "jpg",
+  },
+  ExercisesSpeech_ex_1: {
     description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
   <h2 style="margin: 0 0 4px 0; font-size: 1.5rem;">Чтение с карандашом и без</h2>
   <div style="display: grid; gap: 6px; font-size: 0.95rem;">
@@ -25,50 +80,12 @@ export const L = {
     <div><b>2. Прочитать текст без карандаша</b></div>
   </div>
 </div>`,
-    imgPath: "pencilInMouthText.png",
-  },
-  ExercisesForLips_trubochka: {
-    description: "ExercisesForLips_trubochka",
-    imgPath: "ExercisesForLips_trubochka",
-  },
-  ExercisesForLips_trubochkaWithSmile: {
-    description: "ExercisesForLips_trubochkaWithSmile",
-    imgPath: "ExercisesForLips_trubochkaWithSmile",
-  },
-  ExercisesForLips_trubochkaCircle: {
-    description: "ExercisesForLips_trubochkaCircle",
-    imgPath: "ExercisesForLips_trubochkaCircle",
-  },
-  ExercisesForLaunge_ex_1: {
-    description: "ExercisesForLaunge_ex_1",
-    imgPath: "ExercisesForLaunge_ex_1",
-  },
-  ExercisesForLaunge_ex_2: {
-    description: "ExercisesForLaunge_ex_2",
-    imgPath: "ExercisesForLaunge_ex_2",
-  },
-  ExercisesForLaunge_ex_3: {
-    description: "ExercisesForLaunge_ex_3",
-    imgPath: "ExercisesForLaunge_ex_3",
-  },
-  ExercisesForLaunge_ex_4: {
-    description: "ExercisesForLaunge_ex_4",
-    imgPath: "ExercisesForLaunge_ex_4",
-  },
-  ExercisesSpeech_ex_1: {
-    description: "ExercisesSpeech_ex_1",
     imgPath: "ExercisesSpeech_ex_1",
+    extension: "png",
   },
   ExercisesSpeech_ex_2: {
     description: "ExercisesSpeech_ex_2",
     imgPath: "ExercisesSpeech_ex_2",
-  },
-  ExercisesSpeech_ex_3: {
-    description: "ExercisesSpeech_ex_3",
-    imgPath: "ExercisesSpeech_ex_3",
-  },
-  ExercisesSpeech_ex_4: {
-    description: "ExercisesSpeech_ex_4",
-    imgPath: "ExercisesSpeech_ex_4",
+    extension: "png",
   },
 };

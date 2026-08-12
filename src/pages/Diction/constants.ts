@@ -14,10 +14,6 @@ export const STAGES = [
     label: "Упражнения для губ",
     exercises: [
       {
-        name: "ExercisesForLips_pencilInTheMouth",
-        label: "Чтение с карандашом во рту",
-      },
-      {
         name: "ExercisesForLips_trubochka",
         label: "Губы трубочкой",
       },
@@ -59,19 +55,11 @@ export const STAGES = [
     exercises: [
       {
         name: "ExercisesSpeech_ex_1",
-        label: "Упражнение 1 с карандашом",
+        label: "Упражнение 1 с карандашом и без",
       },
       {
         name: "ExercisesSpeech_ex_2",
-        label: "Упражнение 1 без карандаша",
-      },
-      {
-        name: "ExercisesSpeech_ex_3",
-        label: "Упражнение 2 с карандашом",
-      },
-      {
-        name: "ExercisesSpeech_ex_4",
-        label: "Упражнение 2 без карандаша",
+        label: "Упражнение 2 с карандашом и без",
       },
     ],
   },

@@ -6,6 +6,7 @@ export const ExercisesForLips_trubochkaWithSmile = () => {
     <StandardPage
       description={L.ExercisesForLips_trubochkaWithSmile.description}
       imgPath={[L.ExercisesForLips_trubochkaWithSmile.imgPath]}
+      extension={L.ExercisesForLips_trubochkaWithSmile.extension}
     />
   );
 };

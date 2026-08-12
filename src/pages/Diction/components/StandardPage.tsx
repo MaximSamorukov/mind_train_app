@@ -4,10 +4,12 @@ import s from "./style.module.scss";
 type StandardPageProps = {
   description: string;
   imgPath: string[];
+  extension?: string;
 };
 export const StandardPage: React.FC<StandardPageProps> = ({
   description,
   imgPath,
+  extension = "png",
 }) => {
   return (
     <div className={s.standardPageContainer}>
@@ -22,7 +24,7 @@ export const StandardPage: React.FC<StandardPageProps> = ({
               <img
                 src={
                   new URL(
-                    `../exercises/ExercisesForLips_pencilInTheMouth/assets/${i}`,
+                    `../exercises/${i}/assets/${i}.${extension}`,
                     import.meta.url,
                   ).href
                 }
