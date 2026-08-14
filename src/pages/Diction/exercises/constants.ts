@@ -53,24 +53,45 @@ export const L = {
     extension: "jpg",
   },
   ExercisesForLaunge_ex_1: {
-    description: "ExercisesForLaunge_ex_1",
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>1. Рот приоткрыт, полуулыбка.</b></div>
+    <div><b>2. Коснитесь кончиком языка одного уголка губ.</b></div>
+    <div><b>3. Теперь дотроньтесь до другого.</b></div>
+    <div><b>Повторите 30 раз</b></div>
+  </div>
+</div>`,
     imgPath: "ExercisesForLaunge_ex_1",
     extension: "jpg",
   },
   ExercisesForLaunge_ex_2: {
-    description: "ExercisesForLaunge_ex_2",
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>По 30 раз коснитесь верхней и нижней губы. Если язык устал — зевните или слегка покусайте его для расслабления.</b></div>
+  </div>
+</div>`,
     imgPath: "ExercisesForLaunge_ex_2",
-    extension: "jpg",
+    extension: "png",
   },
   ExercisesForLaunge_ex_3: {
-    description: "ExercisesForLaunge_ex_3",
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>Сделайте язык «острым». «Колоть» им нужно по 10 раз в каждую щёку.</b></div>
+  </div>
+</div>`,
     imgPath: "ExercisesForLaunge_ex_3",
-    extension: "jpg",
+    extension: "webp",
   },
   ExercisesForLaunge_ex_4: {
-    description: "ExercisesForLaunge_ex_4",
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>1. Языком проведите по внутренней стороне верхней челюсти.</b></div>
+    <div><b>2. Перейдите на нижнюю и продолжите движение по ней.</b></div>
+    <div><b>Сделайте по 6 раз по часовой стрелке и против неё.</b></div>
+  </div>
+</div>`,
     imgPath: "ExercisesForLaunge_ex_4",
-    extension: "jpg",
+    extension: "png",
   },
   ExercisesSpeech_ex_1: {
     description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
