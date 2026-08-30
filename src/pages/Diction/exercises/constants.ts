@@ -105,7 +105,13 @@ export const L = {
     extension: "png",
   },
   ExercisesSpeech_ex_2: {
-    description: "ExercisesSpeech_ex_2",
+    description: `<div style="font-family: system-ui; max-width: 700px; margin: 0 auto; padding: 10px;">
+  <h2 style="margin: 0 0 4px 0; font-size: 1.5rem;">Чтение с карандашом и без</h2>
+  <div style="display: grid; gap: 6px; font-size: 0.95rem;">
+    <div><b>1. Прочитать текст с зажатым в зубах карандашом</b></div>
+    <div><b>2. Прочитать текст без карандаша</b></div>
+  </div>
+</div>`,
     imgPath: "ExercisesSpeech_ex_2",
     extension: "png",
   },
